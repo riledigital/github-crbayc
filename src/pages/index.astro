@@ -3,8 +3,7 @@ import Client from '../client.js';
 
 const data = await Client();
 console.log(data)
-
-const {MY_SERVER_VARIABLE, MY_CLIENT_VARIABLE} = data;
+const {MY_SERVER_VARIABLE, MY_CLIENT_VARIABLE, MY_FALLBACK_VARIABLE} = data;
 
 
 ---
@@ -29,6 +28,8 @@ const {MY_SERVER_VARIABLE, MY_CLIENT_VARIABLE} = data;
 {MY_SERVER_VARIABLE}
 <br/>
 {MY_CLIENT_VARIABLE}
+<br/>
+{MY_FALLBACK_VARIABLE}
 
 	</main>
 </body>
