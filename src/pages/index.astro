@@ -1,6 +1,12 @@
 ---
-const MY_SERVER_VARIABLE = import.meta.env.MY_SERVER_VARIABLE
-const MY_CLIENT_VARIABLE = import.meta.env.VITE_MY_CLIENT_VARIABLE
+import Client from '../client.js';
+
+const data = await Client();
+console.log(data)
+
+const {MY_SERVER_VARIABLE, MY_CLIENT_VARIABLE} = data;
+
+
 ---
 <html lang="en">
 <head>
