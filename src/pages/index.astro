@@ -1,0 +1,29 @@
+---
+const MY_SERVER_VARIABLE = import.meta.env.MY_SERVER_VARIABLE
+const MY_CLIENT_VARIABLE = import.meta.env.VITE_MY_CLIENT_VARIABLE
+---
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>TEST</title>
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<style>
+		header {
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			max-width: min(100%, 68ch);
+		}
+	</style>
+</head>
+<body>
+{MY_SERVER_VARIABLE}
+<br/>
+{MY_CLIENT_VARIABLE}
+
+	</main>
+</body>
+</html>
